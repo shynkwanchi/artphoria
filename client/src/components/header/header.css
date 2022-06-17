@@ -1,0 +1,244 @@
+header{
+    background: #1a1a1d;
+    position: sticky;
+    width: 100%;
+    z-index: 1;
+  }
+  header nav{
+    position: relative;
+    display: flex;
+    max-width: calc(100% - 200px);
+    margin: 0 auto;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav .header-content{
+    display: flex;
+    align-items: center;
+  }
+  nav .header-content .links{
+    margin-left: 80px;
+    display: flex;
+  }
+  .header-content .logo a{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .header-content .links li{
+    list-style: none;
+    line-height: 70px;
+  }
+  .header-content .links li a,
+  .header-content .links li label{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 9px 17px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+  }
+  
+  .nav-icon {
+    margin: 0 10px 0 0;
+  }
+  
+  .fa-circle {
+    font-size: 10px;
+    margin: 0 0 0 5px;
+    color: #f00;
+  }
+  
+  .header-content .links li label{
+    display: none;
+  }
+  .header-content .links li a:hover,
+  .header-content .links li label:hover{
+    background: #4e4e50;
+    font-weight: 1000;
+  }
+  header .search-icon,
+  header .menu-icon{
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    line-height: 70px;
+    width: 70px;
+    text-align: center;
+  }
+  header .menu-icon{
+    display: none;
+  }
+  header #show-search:checked ~ .search-icon em::before{
+    content: "\f00d";
+  }
+  
+  header .search-box{
+    position: absolute;
+    height: 100%;
+    max-width: calc(100% - 50px);
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+  }
+  header #show-search:checked ~ .search-box{
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .search-box input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    color: #fff;
+    background: #1a1a1d;
+    padding: 0 100px 0 15px;
+  }
+  .search-box input::placeholder{
+    color: #f2f2f2;
+  }
+  .search-box .go-icon{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 60px;
+    width: 70px;
+    background: #1a1a1d;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  header input[type="checkbox"]{
+    display: none;
+  }
+  
+  /* Dropdown Menu code start */
+  .header-content .links ul{
+    position: absolute;
+    background: #1a1a1d;
+    top: 80px;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .header-content .links li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s ease;
+  }
+  .header-content .links ul li a{
+    display: block;
+    width: 100%;
+    line-height: 30px;
+    border-radius: 0px!important;
+  }
+  .header-content .links ul li{
+    position: relative;
+  }
+  
+  /* Responsive header code start */
+  @media screen and (max-width: 1430px){
+    header nav{
+      max-width: 100%;
+      padding: 0 20px;
+    }
+    nav .header-content .links{
+      margin-left: 30px;
+    }
+    .header-content .links li a{
+      padding: 8px 13px;
+    }
+    header .search-box{
+      max-width: calc(100% - 100px);
+    }
+    header .search-box input{
+      padding: 0 100px 0 15px;
+    }
+  }
+  
+  @media screen and (max-width: 1180px){
+    header .menu-icon{
+      display: block;
+    }
+    header #show-menu:checked ~ .menu-icon em::before{
+      content: "\f00d";
+    }
+    nav .header-content .links{
+      display: block;
+      position: fixed;
+      background: #1a1a1d;
+      height: 100%;
+      width: 100%;
+      top: 70px;
+      left: -100%;
+      margin-left: 0;
+      max-width: 350px;
+      overflow-y: auto;
+      padding-bottom: 100px;
+      transition: all 0.5s ease;
+    }
+    nav #show-menu:checked ~ .header-content .links{
+      left: 0%;
+    }
+    .header-content .links li{
+      margin: 15px 20px;
+    }
+    .header-content .links li a,
+    .header-content .links li label{
+      line-height: 40px;
+      font-size: 20px;
+      display: block;
+      padding: 8px 18px;
+      cursor: pointer;
+    }
+    .header-content .links li a.desktop-link{
+      display: none;
+    }
+  
+    /* dropdown responsive code start */
+    .header-content .links ul{
+      position: static;
+      opacity: 1;
+      visibility: visible;
+      background: none;
+      max-height: 0px;
+      overflow: hidden;
+    }
+    .header-content .links #show-account:checked ~ ul{
+      max-height: 100vh;
+    }
+    .header-content .links ul li{
+      margin: 7px 20px;
+    }
+    .header-content .links ul li a{
+      font-size: 18px;
+      line-height: 30px;
+      border-radius: 5px!important;
+    }
+  }
+  
+  @media screen and (max-width: 400px){
+    header nav{
+      padding: 0 10px;
+    }
+    .header-content .logo a{
+      font-size: 27px;
+    }
+    header .search-box{
+      max-width: calc(100% - 70px);
+    }
+    header .search-box .go-icon{
+      width: 30px;
+      right: 0;
+    }
+    header .search-box input{
+      padding-right: 30px;
+    }
+  }
