@@ -211,7 +211,8 @@ header{
       max-height: 0px;
       overflow: hidden;
     }
-    .header-content .links #show-account:checked ~ ul{
+    .header-content .links #show-account:checked ~ ul,
+    .header-content .links #show-explore:checked~ul {
       max-height: 100vh;
     }
     .header-content .links ul li{
