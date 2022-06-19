@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer>
             <input type="checkbox" id="show-footer" />
-            <label htmlFor="show-footer" className="show-footer-btn"><em className="fas fa-angle-up"></em></label>
+            <label htmlFor="show-footer" className="show-footer-btn"><em className="fas fa-chevron-up"></em></label>
             <div className="footer-content">
                 <div className="social-links">
                     <a href="https://www.facebook.com/duy.nguyenquang.9465177/"><em className="fab fa-facebook"></em></a>

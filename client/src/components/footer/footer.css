@@ -85,7 +85,7 @@ footer {
   }
   
   footer #show-footer:checked ~ .show-footer-btn em::before {
-    content: "\f107";
+    content: "\f078";
   }
   
   footer #show-footer:checked ~ .footer-content {
