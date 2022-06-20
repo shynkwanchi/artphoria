@@ -1,6 +1,6 @@
 header{
     background: #1a1a1d;
-    position: sticky;
+    position: fixed;
     width: 100%;
     z-index: 2;
   }
