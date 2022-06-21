@@ -1,6 +1,7 @@
 header{
     background: #1a1a1d;
     position: fixed;
+    top: 0;
     width: 100%;
     z-index: 2;
   }
@@ -18,7 +19,7 @@ header{
     align-items: center;
   }
   nav .header-content .links{
-    margin-left: 80px;
+    margin: 0 0 0 80px;
     display: flex;
   }
   .header-content .logo a{
@@ -179,9 +180,9 @@ header{
       top: 70px;
       left: -100%;
       margin-left: 0;
-      max-width: 350px;
+      max-width: 300px;
       overflow-y: auto;
-      padding-bottom: 100px;
+      padding: 0;
       transition: all 0.5s ease;
     }
     nav #show-menu:checked ~ .header-content .links{
@@ -204,6 +205,7 @@ header{
   
     /* dropdown responsive code start */
     .header-content .links ul{
+      padding: 0;
       position: static;
       opacity: 1;
       visibility: visible;

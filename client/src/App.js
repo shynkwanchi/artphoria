@@ -1,13 +1,16 @@
-import Header from "./components/header/header.js";
-import Footer from "./components/footer/footer.js";
-import Banner from "./components/banner/banner.js";
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import UseAsUser from "./layout/useAsUser";
+import Home from "./routes/home";
 
 function App() {
   return (
     <>
-      <Header />
-      <Banner />
-      <Footer />
+      <Routes>
+        <Route element={<UseAsUser/>}>
+          <Route path="/" element={<Home />} />{" "}
+        </Route>{" "}
+      </Routes>
     </>
   );
 }
