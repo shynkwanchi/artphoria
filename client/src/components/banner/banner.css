@@ -60,3 +60,9 @@
         font-size: 20px;
     }
 }
+
+@media screen and (max-height: 450px) {
+    .banner-container {
+        height: 450px;
+    }
+}
