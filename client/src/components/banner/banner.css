@@ -13,6 +13,7 @@
 
 .banner-container h1 {
     font-size: 100px;
+    font-weight: bold;
 }
 
 .banner-container p {
@@ -41,7 +42,7 @@
 }
 
 .banner-container button:hover a {
-    font-weight: 1000;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 550px) {
