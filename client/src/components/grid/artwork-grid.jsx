@@ -1,23 +1,21 @@
-import React, { Component } from "react";
-import ArtworkItem from "../items/artwork-item";
+import React from "react";
+import ArtworkGridItem from "../items/artwork-item";
 
-class ArtworkGrid extends Component {
-    render() {
-        return (
-            <div className="row row-cols-xl-5">
-                <ArtworkItem />
-                <ArtworkItem />
-                <ArtworkItem />
-                <ArtworkItem />
-                <ArtworkItem />
-                <ArtworkItem />
-                <ArtworkItem />
-                <ArtworkItem />
-                <ArtworkItem />
-                <ArtworkItem />
-            </div>
-        );
-    }
+const ArtworkGrid = () => {
+    return (
+        <div className="row row-cols-xl-5">
+            <ArtworkGridItem />
+            <ArtworkGridItem />
+            <ArtworkGridItem />
+            <ArtworkGridItem />
+            <ArtworkGridItem />
+            <ArtworkGridItem />
+            <ArtworkGridItem />
+            <ArtworkGridItem />
+            <ArtworkGridItem />
+            <ArtworkGridItem />
+        </div>
+    );
 }
 
 export default ArtworkGrid

@@ -10,15 +10,31 @@ html {
   scroll-behavior: smooth;
 }
 
+html a {
+  text-decoration: none;
+}
+
 main {
   margin: 70px 0 52px;
 }
 
-a {
-  text-decoration: none;
+hr {
+  margin: 0;
 }
 
-.btn {
+/* STYLE THE SECTION */
+section {
+  padding: 30px 0;
+}
+
+.section-name {
+  margin: 0 0 10px;
+  font-weight: 1000;
+  border-bottom: 5px solid #950740;
+}
+
+/* STYLE THE BUTTON */
+html .btn {
   padding: 8px 13px;
   border: none;
   border-radius: 5px;
@@ -29,22 +45,7 @@ a {
   cursor: pointer;
 }
 
-.btn:hover {
+html .btn:hover {
   background: #6f2232;
   font-weight: 1000;
-}
-
-hr {
-  margin: 0;
-}
-
-/* STYLING THE SECTION */
-section {
-  padding: 30px 0;
-}
-
-.section-name {
-  margin: 0 0 10px;
-  font-weight: 1000;
-  border-bottom: 5px solid #950740;
 }

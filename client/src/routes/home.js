@@ -7,18 +7,17 @@ const Home = () => {
         <main>
             <Banner />
             <div className="container" id="home-main-section">
-                <section className="artworks">
+                <section>
                     <h2 className="section-name">NEW ARTWORKS</h2>
                     <ArtworkGrid />
                 </section>
 
                 <hr />
 
-                <section className="artworks">
+                <section>
                     <h2 className="section-name">FEATURED ARTWORKS</h2>
                     <ArtworkGrid />
                 </section>
-
             </div>
         </main>
     );

@@ -25,19 +25,12 @@
 }
 
 .item-title,
-.item-specs {
+.item-extra {
     margin: 0 0 5px;
     width: 100%;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: pre;
-}
-
-/* FOR ARTWORKS AND CATEGORIES SECTION */
-.artworks .image-container {
-    margin: 0 auto 10px;
-    overflow: hidden;
-    height: 200px;
 }
 
 .item-title {
@@ -47,9 +40,6 @@
 
 .item-subtitle {
     margin: 0;
-}
-
-.item-subtitle a {
     font-size: 16px;
 }
 
@@ -57,6 +47,26 @@
     font-weight: 1000
 }
 
-.item-specs {
+.item-extra {
     font-size: 12px;
+}
+
+/* FOR ARTWORK, COLLECTION AND GENRE ITEM */
+.thumbnail-container {
+    margin: 0 auto 10px;
+    overflow: hidden;
+    height: 200px;
+}
+
+/* FOR MEMBER AND HASHTAG ITEM */
+.center-aligned-item {
+    text-align: center;
+}
+
+.center-aligned-item .image-container {
+    margin: 0 auto 10px;
+    overflow: hidden;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
 }
