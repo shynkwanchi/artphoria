@@ -1,0 +1,62 @@
+.item-container {
+    padding: 12px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.item-container:hover {
+    background: #fcc;
+    color: #c3073f;
+}
+
+.item-container a {
+    color: #000;
+    text-decoration: none;
+}
+
+.item-container:hover a {
+    color: #c3073f;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item-title,
+.item-specs {
+    margin: 0 0 5px;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: pre;
+}
+
+/* FOR ARTWORKS AND CATEGORIES SECTION */
+.artworks .image-container {
+    margin: 0 auto 10px;
+    overflow: hidden;
+    height: 200px;
+}
+
+.item-title {
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+.item-subtitle {
+    margin: 0;
+}
+
+.item-subtitle a {
+    font-size: 16px;
+}
+
+.item-subtitle a:hover {
+    font-weight: 1000
+}
+
+.item-specs {
+    font-size: 12px;
+}
