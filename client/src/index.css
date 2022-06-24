@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +20,7 @@ main {
 }
 
 hr {
-  margin: 0;
+  margin: 0 !important;
 }
 
 /* STYLE THE SCROLL BAR */
@@ -60,5 +61,33 @@ html .btn {
 
 html .btn:hover {
   background: #6f2232;
+  color: #fff;
   font-weight: 1000;
+}
+
+/* STYLE THE CAROUSEL NAVIGATION */
+.swiper-button-prev, .swiper-button-next {
+  display: block;
+  border-radius: 5px;
+  height: auto !important;
+  width: auto !important;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.swiper-button-prev {
+  left: 0px !important;
+}
+
+.swiper-button-next {
+  right: 0px !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: #fff;
 }

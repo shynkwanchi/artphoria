@@ -51,22 +51,26 @@
     font-size: 12px;
 }
 
-/* FOR ARTWORK, COLLECTION AND GENRE ITEM */
-.thumbnail-container {
+/* FOR BIG ITEMS SUCH AS ARTWORK, COLLECTION AND GENRE ITEMS */
+.big-item .image-container {
     margin: 0 auto 10px;
     overflow: hidden;
     height: 200px;
 }
 
-/* FOR MEMBER AND HASHTAG ITEM */
-.center-aligned-item {
+/* FOR SMALL ITEMS MEMBER AND HASHTAG ITEMS */
+.small-item {
     text-align: center;
 }
 
-.center-aligned-item .image-container {
+.small-item .image-container {
     margin: 0 auto 10px;
     overflow: hidden;
     height: 100px;
     width: 100px;
     border-radius: 50%;
+}
+
+.follow-btn {
+    margin-top: 10px;
 }

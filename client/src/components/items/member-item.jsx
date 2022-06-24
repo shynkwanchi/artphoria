@@ -4,9 +4,9 @@ import "./item.css";
 
 const MemberItem = props => {
     return (
-        <div className="item item-container center-aligned-item">
+        <div className="item-container small-item">
             <a href="#">
-                <div className="image-container avatar-container">
+                <div className="image-container">
                     <img src={avatar} alt="member-avatar" />
                 </div>
                 <p className="item-title">Username</p>

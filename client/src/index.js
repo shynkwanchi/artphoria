@@ -5,6 +5,8 @@ import "./index.css";
 import { BrowserRouter } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

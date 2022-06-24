@@ -4,9 +4,9 @@ import "./item.css";
 
 const ArtworkGridItem = props => {
     return (
-        <div className="col-12 col-sm-6 col-md-4 col-lg-3 item-container">
+        <div className="col-12 col-sm-6 col-md-4 col-lg-3 item-container big-item">
             <a href="#">
-                <div className="image-container thumbnail-container">
+                <div className="image-container">
                     <img src={artwork} alt="artwork-thumbnail" />
                 </div>
                 <p className="item-title">Artwork title</p>
