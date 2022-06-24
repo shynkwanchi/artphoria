@@ -27,6 +27,8 @@ const Home = () => {
                     <MemberCarousel />
                 </section>
 
+                <hr />
+
                 <section>
                     <h2 className="section-name">NEW MEMBERS</h2>
                     <MemberCarousel />
