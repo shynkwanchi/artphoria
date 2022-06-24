@@ -17,6 +17,7 @@ html a {
 
 main {
   margin: 70px 0 52px;
+  min-height: calc(100vh - 122px);
 }
 
 hr {

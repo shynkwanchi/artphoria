@@ -1,7 +1,7 @@
 import React from "react";
-import Banner from "../components/banner/banner";
-import MemberCarousel from "../components/item-lists/carousel";
-import ArtworkGrid from "../components/item-lists/grid";
+import Banner from "../../components/banner/banner";
+import MemberCarousel from "../../components/item-lists/carousel";
+import ArtworkGrid from "../../components/item-lists/grid";
 
 const Home = () => {
     return (
