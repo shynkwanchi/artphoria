@@ -24,6 +24,7 @@ main {
   margin: 70px 0 52px;
   min-height: calc(100vh - 122px);
 }
+
 @media screen and (max-height: 600px) {
   main {
     min-height: 478px
