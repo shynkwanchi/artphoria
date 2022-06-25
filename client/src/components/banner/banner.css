@@ -51,8 +51,8 @@
     }
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 500px) {
     .banner-container {
-        height: 450px;
+        height: 378px;
     }
 }
