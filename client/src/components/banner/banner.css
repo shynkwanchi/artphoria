@@ -9,17 +9,7 @@
 
 .banner-content button {
     margin-top: 20px;
-}
-
-.banner-content button a {
-    display: block;
-    color: #fff;
     font-size: 30px;
-    font-weight: 500;
-}
-
-.banner-content button:hover a {
-    font-weight: bold;
 }
 
 @media screen and (max-width: 550px) {

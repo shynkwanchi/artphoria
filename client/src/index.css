@@ -11,8 +11,13 @@ html {
   scroll-behavior: smooth;
 }
 
+html h1 {
+  font-size: 50px;
+}
+
 html a {
   text-decoration: none;
+  color: #000;
 }
 
 hr {
@@ -63,14 +68,27 @@ html .btn {
   font-weight: 500;
   background: #c3073f;
   color: #fff;
-  transition: all 0.5s ease;
   cursor: pointer;
+  text-align: center;
 }
 
 html .btn:hover {
   background: #6f2232;
   color: #fff;
   font-weight: 1000;
+}
+
+.btn a {
+  display: block;
+  color: #fff;
+  width: 100%;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+
+.btn:hover a {
+  font-weight: bold;
+  color: #fff;
 }
 
 /* STYLE THE CAROUSEL NAVIGATION */
@@ -105,7 +123,7 @@ html .btn:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/background.jpg) no-repeat center fixed;
   background-size: cover;
   width: 100%;
-  height: calc(100vh - 122px);
+  min-height: calc(100vh - 122px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,8 +132,8 @@ html .btn:hover {
   color: #fff;
 }
 
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 600px) {
   .background-container {
-      min-height: 378px;
+      min-height: 478px;
   }
 }

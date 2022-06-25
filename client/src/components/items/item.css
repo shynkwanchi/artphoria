@@ -2,16 +2,12 @@
     padding: 12px;
     cursor: pointer;
     transition: all 0.5s ease;
+    border-radius: 5px;
 }
 
 .item-container:hover {
     background: #fcc;
     color: #c3073f;
-}
-
-.item-container a {
-    color: #000;
-    text-decoration: none;
 }
 
 .item-container:hover a {
@@ -44,7 +40,8 @@
 }
 
 .item-subtitle a:hover {
-    font-weight: 1000
+    font-weight: 1000;
+    color: #950740;
 }
 
 .item-extra {
@@ -56,6 +53,7 @@
     margin: 0 auto 10px;
     overflow: hidden;
     height: 200px;
+    border-radius: 5px;
 }
 
 /* FOR SMALL ITEMS MEMBER AND HASHTAG ITEMS */
@@ -66,8 +64,8 @@
 .small-item .image-container {
     margin: 0 auto 10px;
     overflow: hidden;
-    height: 100px;
-    width: 100px;
+    height: 125px;
+    width: 125px;
     border-radius: 50%;
 }
 
