@@ -1,8 +1,9 @@
 .form-container {
     background: #fff;
     color:#000;
-    width: 350px;
-    padding: 25px;
+    min-width: 576px;
+    max-width: 768px;
+    padding: 20px;
     border-radius: 5px;
 }
 
@@ -11,10 +12,10 @@
 }
 
 form {
-    margin: 25px 0;
+    margin: 20px 0;
 }
 
-.form-group, .checkbox {
+.form-group {
     text-align: left;
     margin: 15px 0;
 }
@@ -23,26 +24,8 @@ form {
     width: 100%;
 }
 
-.error-message {
-    color: #f00;
-    font-weight: bold;
-    display: none;
-}
-
-#forgot-pwd-link {
-    display: inline-block;
-    margin-top: 15px;
-    color:#c3073f;
-    transition: all 0.5s ease;
-}
-
-#forgot-pwd-link:hover {
-    color: #6f2232;
-    font-weight: bold;
-}
-
 .alternate-option {
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .alternate-option p {
@@ -58,9 +41,14 @@ form {
     background: #396;
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 576px) {
     .form-container {
-        width: 100%;
-        border-radius: 0px;
+        min-width: 100%;
     }
+}
+
+/* FOR SIGN IN PAGE */
+#forgot-pwd-link {
+    display: inline-block;
+    margin-top: 15px;
 }

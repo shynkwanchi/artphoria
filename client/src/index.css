@@ -91,6 +91,17 @@ html .btn:hover {
   color: #fff;
 }
 
+/* STYLE THE LINK */
+.link {
+  color: #c3073f;
+  transition: all 0.5s ease;
+}
+
+.link:hover {
+  color: #6f2232;
+  font-weight: bold;
+}
+
 /* STYLE THE CAROUSEL NAVIGATION */
 .swiper-button-prev, .swiper-button-next {
   display: block;
@@ -136,4 +147,11 @@ html .btn:hover {
   .background-container {
       min-height: 478px;
   }
+}
+
+/* STYLE THE FORM ERROR MESSAGE */
+.error-message {
+  color: #f00;
+  font-weight: bold;
+  font-size: 20px;
 }
