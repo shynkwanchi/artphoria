@@ -12,7 +12,11 @@ html {
 }
 
 html h1 {
-  font-size: 50px;
+  font-size: 40px;
+}
+
+html h2 {
+  font-size: 32px;
 }
 
 html a {

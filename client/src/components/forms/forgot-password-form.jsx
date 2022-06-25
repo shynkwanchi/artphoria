@@ -15,8 +15,8 @@ const ForgotPasswordForm = () => {
 
                 <form action="#">
                     <div className="form-group">
-                        <label htmlFor="username">Your email</label>
-                        <input type="text" className="form-control" id="username" placeholder="Enter your email address" required />
+                        <label htmlFor="email">Your email</label>
+                        <input type="text" className="form-control" id="email" placeholder="yourname@example.com" required />
                     </div>
 
                     <div className="form-group">

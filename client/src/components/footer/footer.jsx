@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./footer.css";
 
 const Footer = () => {
@@ -14,11 +15,11 @@ const Footer = () => {
                     <a href="https://github.com/shynkwanchi"><em className="fab fa-github"></em></a>
                 </div>
                 <ul className="footer-links">
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Contact us</a></li>
-                    <li><a href="#">Terms</a></li>
-                    <li><a href="#">Privacy policy</a></li>
+                    <li><Link to="/about-us">About us</Link></li>
+                    <li><Link to="/faqs">FAQs</Link></li>
+                    <li><Link to="/contact-us">Contact us</Link></li>
+                    <li><Link to="/terms">Terms</Link></li>
+                    <li><Link to="/privacy-policy">Privacy policy</Link></li>
                 </ul>
                 <p className="copyright">
                     Artphoria © 2022. All rights reserved.
