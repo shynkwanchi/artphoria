@@ -1,4 +1,5 @@
 import express from "express";
+import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import cors from 'cors';
 import dotenv from 'dotenv';
@@ -12,8 +13,8 @@ const PORT = process.env.PORT || 5000;
 const URL = process.env.DATABASE_URL;
 
 // Middleware
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
 // Database config
@@ -25,8 +26,8 @@ mongoose.connect(URL, {
     app.listen(PORT, () => {
         console.log(`Server is running on port ${PORT}`);
     });
-}).catch((error) => {
-    console.log("An error occured.", error)
+}).catch((err) => {
+    console.log("An error occured.", err)
 });
 
 // API endpoints
