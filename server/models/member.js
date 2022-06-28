@@ -19,6 +19,10 @@ const MemberSchema = mongoose.Schema({
         type: Date,
         require: true,
     },
+    password: {
+        type: String,
+        require: true,
+    },
     gender: {
         type: String,
     },
@@ -33,8 +37,9 @@ const MemberSchema = mongoose.Schema({
     },
     joinDate: {
         type: Date,
-        default: new Date(),
     }
 });
 
-export default MemberSchema;
+const MemberModel = mongoose.model("members", MemberSchema);
+
+export default MemberModel;

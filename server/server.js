@@ -10,7 +10,7 @@ dotenv.config();
 // App config
 const app = express();
 const PORT = process.env.PORT || 5000;
-const URL = process.env.DATABASE_URL;
+const URI = process.env.DATABASE_URL;
 
 // Middleware
 app.use(bodyParser.json());
@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
 // Database config
-mongoose.connect(URL, {
+mongoose.connect(URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => {

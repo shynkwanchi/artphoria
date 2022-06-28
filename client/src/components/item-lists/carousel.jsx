@@ -2,6 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import MemberItem from "../items/member-item";
+import "./carousel.css"
 
 const MemberCarousel = () => {
     return (

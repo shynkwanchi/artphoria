@@ -106,33 +106,6 @@ html .btn:hover {
   font-weight: bold;
 }
 
-/* STYLE THE CAROUSEL NAVIGATION */
-.swiper-button-prev, .swiper-button-next {
-  display: block;
-  border-radius: 5px;
-  height: auto !important;
-  width: auto !important;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.3);
-}
-
-.swiper-button-prev:hover, .swiper-button-next:hover {
-  background: rgba(0, 0, 0, 0.6);
-}
-
-.swiper-button-prev {
-  left: 0px !important;
-}
-
-.swiper-button-next {
-  right: 0px !important;
-}
-
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  color: #fff;
-}
-
 /* STYLE THE BACKGROUND CONTAINER (FOR BANNER, FORM BOX AND CHAT BOX) */
 .background-container {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/background.jpg) no-repeat center fixed;
@@ -151,12 +124,4 @@ html .btn:hover {
   .background-container {
       min-height: 478px;
   }
-}
-
-/* STYLE THE FORM ERROR MESSAGE */
-.error-message {
-  color: #f00;
-  font-weight: bold;
-  font-size: 20px;
-  margin: 0;
 }
