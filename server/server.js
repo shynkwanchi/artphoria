@@ -15,7 +15,7 @@ const URI = process.env.DATABASE_URL;
 // Middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cors());
+app.use(cors);
 
 // Database config
 mongoose.connect(URI, {

@@ -26,30 +26,30 @@ export const signUp = async (req, res) => {
         const { fullName, username, email, birthday, password, verifyPassword } = req.body;
 
         if (!fullName || !username || !email || !birthday || !password || !verifyPassword)
-            return res.status(400).json({ msg: "Please enter all required fields! "});
+            return res.status(400).json({ errMsg: "Please enter all required fields! "});
 
         if (!validateFullName(fullName))
-            return res.status(400).json({ msg: "Please enter the CORRECT fullname format!" });
+            return res.status(400).json({ errMsg: "Please enter the CORRECT fullname format!" });
 
         if (!validateUsername(username))
-            return res.status(400).json({ msg: "Username contains ONLY letters or numbers!" });
+            return res.status(400).json({ errMsg: "Username contains ONLY letters or numbers!" });
 
         if (!validateEmail(email))
-            return res.status(400).json({ msg: "Please enter the CORRECT email format!" });
+            return res.status(400).json({ errMsg: "Please enter the CORRECT email format!" });
 
         if (password.trim().length < 8)
-            return res.status(400).json({ msg: "Password contains AT LEAST 8 characters!" });
+            return res.status(400).json({ errMsg: "Password contains AT LEAST 8 characters!" });
 
         if (verifyPassword.trim() !== password.trim())
-            return res.status(400).json({ msg: "Please re-enter the SAME password!" });
+            return res.status(400).json({ errMsg: "Please re-enter the SAME password!" });
 
         let foundMember = await MemberModel.findOne({username: username.trim() });
         if (foundMember)
-            return res.status(400).json({ msg: "Username already exists!" });
+            return res.status(400).json({ errMsg: "Username already exists!" });
 
         foundMember = await MemberModel.findOne({ email: email.trim() });
         if (foundMember)
-            return res.status(400).json({ msg: "Email already exists!" });
+            return res.status(400).json({ errMsg: "Email already exists!" });
 
         const salt = await bcrypt.genSalt();
         const hashedPassword = await bcrypt.hash(password, salt);
@@ -64,9 +64,9 @@ export const signUp = async (req, res) => {
         });
 
         await newMember.save();
-        return res.json({ msg: "Sign up successfully "})
+        return res.json({ successMsg: "Sign up successfully "})
     } catch (err) {
-        return res.status(500).json({ msg: err.message })
+        return res.status(500).json({ errMsg: err.message })
     }
 };
 

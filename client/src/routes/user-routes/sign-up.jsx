@@ -1,8 +1,10 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import axios from 'axios';
 import "../../components/form/form.css";
+import { SuccessMessage, ErrorMessage } from "../../components/status-message/status-message";
 
-const SignUp = () => {
+const SignUp = () => {   
     return (
         <main>
             <div className="background-container">
@@ -12,38 +14,36 @@ const SignUp = () => {
                         <p className="form-description">Fast, easy and always free</p>
                     </div>
 
-
-
-                    <form action="#">
+                    <form>
                         <div className="row">
                             <div className="form-group col-12 col-sm-6">
                                 <label htmlFor="fullname">Your fullname</label>
-                                <input type="text" className="form-control" id="fullname" placeholder="John Doe" required />
+                                <input type="text" name="fullname" className="form-control" id="fullname" placeholder="John Doe" required />
                             </div>
 
                             <div className="form-group col-12 col-sm-6">
                                 <label htmlFor="username">Your username</label>
-                                <input type="text" className="form-control" id="username" placeholder="example123" required />
+                                <input type="text" name="username" className="form-control" id="username" placeholder="Example123" required />
                             </div>
 
                             <div className="form-group col-12 col-sm-6">
                                 <label htmlFor="email">Your email</label>
-                                <input type="email" className="form-control" id="email" placeholder="yourname@example.com" required />
+                                <input type="email" name="email" className="form-control" id="email" placeholder="yourname@example.com" required />
                             </div>
 
                             <div className="form-group col-12 col-sm-6">
                                 <label htmlFor="birthday">Your birthday</label>
-                                <input type="date" className="form-control" id="birthday" required />
+                                <input type="date" name="birthday" className="form-control" id="birthday" required />
                             </div>
 
                             <div className="form-group col-12 col-sm-6">
                                 <label htmlFor="password">Your password</label>
-                                <input type="password" className="form-control" id="pasword" placeholder="At least 8 characters" required />
+                                <input type="password" name="password" className="form-control" id="pasword" placeholder="At least 8 characters" required />
                             </div>
 
                             <div className="form-group col-12 col-sm-6">
                                 <label htmlFor="verify-password">Verify your password</label>
-                                <input type="password" className="form-control" id="verify-pasword" placeholder="Re-enter the same password" required />
+                                <input type="password" name="verifyPassword" className="form-control" id="verify-pasword" placeholder="Re-enter the same password" required />
                             </div>
 
                         </div>
