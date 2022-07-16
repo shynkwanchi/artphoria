@@ -19,7 +19,7 @@ const Header = () => {
                             <Link to="/explore"><em className="fas fa-compass nav-icon"></em>Explore</Link>
                         </li>
                         <li>
-                            <Link to="/setting"><em className="fas fa-cog nav-icon"></em>Settings</Link>
+                            <Link to="/settings"><em className="fas fa-cog nav-icon"></em>Settings</Link>
                         </li>
                         <li>
                             <Link to="/help"><em className="fas fa-question-circle nav-icon"></em>Help</Link>

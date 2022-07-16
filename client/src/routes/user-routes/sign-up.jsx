@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios';
 import "../../components/form/form.css";
-import { SuccessMessage, ErrorMessage } from "../../components/status-message/status-message";
 
 const SignUp = () => {   
     return (
