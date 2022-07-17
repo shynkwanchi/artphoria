@@ -11,7 +11,7 @@ const ArtworkGridItem = props => {
                     <img src={artwork} alt="artwork-thumbnail" />
                 </div>
                 <p className="item-title">Artwork title</p>
-                <p className="item-extra">123K views - Mmm Dd Yyyy</p>
+                <p className="item-extra">123K views - Mmm Dd, Yyyy</p>
             </Link>
             <p className="item-subtitle">by <Link to="/member-profile">Username</Link></p>
         </div>

@@ -1,0 +1,28 @@
+.artwork-title {
+    padding-top: 12px;
+}
+
+hr {
+    margin: 0 0 12px !important;
+}
+
+.artwork-interaction-button {
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    padding: 12px 0 !important;
+}
+
+.artwork-interaction-button:hover {
+    background: #fcc;
+    color: #c3073f;
+    font-weight: 1000;
+}
+
+.artwork-interaction-icon {
+    font-size: 24px;
+}
+
+#description p {
+    margin: 0;
+}

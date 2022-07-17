@@ -13,21 +13,21 @@ const Home = () => {
                     <ArtworkGrid />
                 </section>
 
-                <hr />
+                <hr className="section-separator"/>
 
                 <section>
                     <h2 className="section-name">FEATURED ARTWORKS</h2>
                     <ArtworkGrid />
                 </section>
 
-                <hr />
+                <hr className="section-separator"/>
 
                 <section>
                     <h2 className="section-name">FEATURED MEMBERS</h2>
                     <MemberCarousel />
                 </section>
 
-                <hr />
+                <hr className="section-separator"/>
 
                 <section>
                     <h2 className="section-name">NEW MEMBERS</h2>

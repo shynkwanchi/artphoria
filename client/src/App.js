@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import UseAsUser from "./layout/useAsUser";
-import ArtworkDetails from "./routes/user-routes/artwork-details";
+import ArtworkDetails from "./routes/user-routes/artwork-details/artwork-details";
 import ContactUs from "./routes/user-routes/contact-us";
 import ForgotPassword from "./routes/user-routes/forgot-pasword";
 import Home from "./routes/user-routes/home";
