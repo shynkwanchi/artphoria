@@ -4,7 +4,7 @@ import { Navigation } from "swiper";
 import MemberItem from "../items/member-item";
 import "./carousel.css"
 
-const MemberCarousel = () => {
+const Carousel = () => {
     return (
         <Swiper
             loop={true}
@@ -42,4 +42,4 @@ const MemberCarousel = () => {
     );
 };
 
-export default MemberCarousel
+export default Carousel
