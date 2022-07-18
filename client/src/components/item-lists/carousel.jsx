@@ -27,7 +27,7 @@ const MemberCarousel = () => {
                     slidesPerView: 5
                 }
             }}
-            className="member-carousel">
+            className="carousel">
             <SwiperSlide><MemberItem /></SwiperSlide>
             <SwiperSlide><MemberItem /></SwiperSlide>
             <SwiperSlide><MemberItem /></SwiperSlide>

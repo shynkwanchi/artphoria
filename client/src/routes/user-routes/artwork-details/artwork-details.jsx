@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ArtworkViewer from "../../../components/artwork-viewer/artwork-viewer";
 import "./artwork-details.css";
+import avatar from "../../../assets/avatar.jpg";
 
 const ArtworkDetails = () => {
     return (
@@ -48,19 +49,22 @@ const ArtworkDetails = () => {
 
                     <hr />
 
-                    <div className="row">
-                        <div className="col">
+                    <div className="row align-items-center" id="member-specs">
+                        <div className="col-12 col-sm-auto">
                             <Link to="/member-profile">
-                                Member avatar
+                                <div className="member-avatar-container">
+                                    <img src={avatar} alt="member-avatar" />
+                                </div>
                             </ Link>
                         </div>
                         <div className="col">
                             <Link to="/member-profile" className="username">
                                 Username
                             </ Link>
+                            <p className="followers">123K followers</p>
                         </div>
-                        <div className="col">
-                            Follow btn
+                        <div className="col-12 col-sm-auto">
+                            <button type="button" className="btn follow-btn" id="follow-btn-in-artwork-details">Follow</button>
                         </div>
                     </div>
                 </section>
