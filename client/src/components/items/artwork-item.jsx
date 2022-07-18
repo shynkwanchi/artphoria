@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import artwork from "../../assets/artwork.jpg";
 import "./item.css";
 
-const ArtworkGridItem = props => {
+const ArtworkItem = props => {
     return (
-        <div className="col-12 col-sm-6 col-md-4 col-lg-3 item-container big-item">
+        <div className="item-container big-item">
             <Link to="/artwork-details">
                 <div className="image-container">
                     <img src={artwork} alt="artwork-thumbnail" />
@@ -18,4 +18,4 @@ const ArtworkGridItem = props => {
     );
 };
 
-export default ArtworkGridItem;
+export default ArtworkItem;
