@@ -125,3 +125,32 @@ html .btn:hover {
       min-height: 478px;
   }
 }
+
+/* STYLE THE DROPDOWN */
+.dropdown-toggle {
+  display: block;
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.dropdown-menu {
+  padding: 0 !important;
+}
+
+.dropdown-item {
+  padding: 12px 16px !important;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.dropdown-item:hover {
+  background: #fcc !important;
+  color: #c3073f !important;
+  font-weight: 1000;
+}
+
+.dropdown-item .artwork-interaction-icon {
+  padding: 0 8px 0 0;
+}

@@ -38,10 +38,16 @@ const ArtworkDetails = () => {
                                     <br />
                                     Save
                                 </div>
-                                <div className="col artwork-interaction-button">
-                                    <em className="fas fa-ellipsis artwork-interaction-icon"></em>
-                                    <br />
-                                    More
+                                <div className="col artwork-interaction-button dropdown">
+                                    <span className="dropdown-toggle" id="othersButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <em className="fas fa-ellipsis artwork-interaction-icon"></em>
+                                        <br />
+                                        Others
+                                    </span>
+                                    <ul className="dropdown-menu" aria-labelledby="othersButton">
+                                        <li><a className="dropdown-item"><em className="fas fa-download artwork-interaction-icon"></em> Download</a></li>
+                                        <li><a className="dropdown-item"><em className="fas fa-flag artwork-interaction-icon"></em> Report</a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
