@@ -64,7 +64,7 @@ const ArtworkDetails = () => {
                             <p className="followers">123K followers</p>
                         </div>
                         <div className="col-12 col-sm-auto">
-                            <button type="button" className="btn follow-btn" id="follow-btn-in-artwork-details">Follow</button>
+                            <button type="button" className="btn follow-btn">Follow</button>
                         </div>
                     </div>
                 </section>
